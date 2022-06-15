@@ -6,7 +6,7 @@
 /*   By: jaehwkim <jaehwkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/14 14:46:44 by jaehwkim          #+#    #+#             */
-/*   Updated: 2022/06/15 10:24:29 by jaehwkim         ###   ########.fr       */
+/*   Updated: 2022/06/15 12:51:17 by jaehwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,27 +32,27 @@ void	print_check(t_stack *a, t_stack *b)
 
 void	operation_b(t_stack *a, t_stack *b, char *input)
 {
-	if (ft_strcmp(input, "sa"))
+	if (ft_strcmp(input, "sa") == 0)
 		sa(a);
-	else if (ft_strcmp(input, "sb"))
+	else if (ft_strcmp(input, "sb") == 0)
 		sb(b);
-	else if (ft_strcmp(input, "ss"))
+	else if (ft_strcmp(input, "ss") == 0)
 		ss(a, b);
-	else if (ft_strcmp(input, "pa"))
+	else if (ft_strcmp(input, "pa") == 0)
 		pa(a, b);
-	else if (ft_strcmp(input, "pb"))
+	else if (ft_strcmp(input, "pb") == 0)
 		pb(a, b);
-	else if (ft_strcmp(input, "ra"))
+	else if (ft_strcmp(input, "ra") == 0)
 		ra(a);
-	else if (ft_strcmp(input, "rb"))
+	else if (ft_strcmp(input, "rb") == 0)
 		rb(b);
-	else if (ft_strcmp(input, "rr"))
+	else if (ft_strcmp(input, "rr") == 0)
 		rr(a, b);
-	else if (ft_strcmp(input, "rra"))
+	else if (ft_strcmp(input, "rra") == 0)
 		rra(a);
-	else if (ft_strcmp(input, "rrb"))
+	else if (ft_strcmp(input, "rrb") == 0)
 		rrb(b);
-	else if (ft_strcmp(input, "rrr"))
+	else if (ft_strcmp(input, "rrr") == 0)
 		rrr(a, b);
 }
 
